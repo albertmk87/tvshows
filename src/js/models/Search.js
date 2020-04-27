@@ -6,7 +6,7 @@ export default class Search {
 	}
 
 	async getResults(){
-	const res = await axios(`http://api.tvmaze.com/search/shows?q=${this.searchInput}`);
+	const res = await axios(`https://api.tvmaze.com/search/shows?q=${this.searchInput}`);
 	this.tvShows=res.data;
 	}
 

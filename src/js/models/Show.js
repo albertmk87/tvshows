@@ -7,7 +7,7 @@ export default class Show {
 	}
 
 	async getShow(){
-	const res = await axios(`http://api.tvmaze.com/shows/${this.id}`);
+	const res = await axios(`https://api.tvmaze.com/shows/${this.id}`);
 	this.title=res.data.name;
 	this.genres=res.data.genres;
 	this.url=res.data.officialSite;
